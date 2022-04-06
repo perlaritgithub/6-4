@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>example6</title>
+    </head>
+    <body>
+        <script>
+            function class_one(){
+
+            };
+            class_one.prototype.fun_one=function(){
+                return "hello_1";
+            };
+            function class_two(){
+
+            };
+            class_two.prototype=Object.create(class_one.prototype);
+            class_two.prototype.fun_two=function(){
+                return "hello_2";
+            };
+            function class_three(){
+
+            };
+            class_three.prototype=Object.create(class_two.prototype);
+            class_three.prototype.fun_three=function(){
+                return "hello_3";
+            };
+            let obj1=new class_one();
+            console.log(obj1.fun_one());
+            let obj2=new class_two();
+            console.log(obj2.fun_one(),obj2.fun_two());
+            let obj3=new class_three();
+            console.log(obj3.fun_one(),obj3.fun_two(),obj3.fun_three());
+
+        </script>
+    </body>
+</html>

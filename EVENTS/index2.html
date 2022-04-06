@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DOM MANIPULATIONS</title>
+    </head>
+    <body>
+       <p id="my_paragraph"></p>
+       <input type="text" id="input_one">
+        <input type="password" id="input_two">
+        <button onclick="myFun()">Click Me</button>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+    </body>
+    <script>
+      //  document.getElementById("my_paragraph").innerHTML="my_paragraph";
+      function myFun(){
+          //  console.log(document.getElementById("input_one").value);
+      //    console.log(document.getElementById("input_two").value);
+    
+     //   console.log(document.getElementByTagName("p")[0]);
+      //  console.log(document.getElementsByTagName("p")[0].innerHTML="Hello");
+     // document.getElementsByTagName("p").forEach((ele)=> {
+      //    console.log(ele);
+          
+ //     });
+ //   }
+      // console.log(document.getElementsByTagName("p"));
+      document.getElementsByTagName("P")[0].innerHTML="paragraph1";
+      document.getElementsByTagName("P")[1].innerHTML="paragraph2";
+      document.getElementsByTagName("P")[2].innerHTML="paragraph3";
+      document.getElementsByTagName("P")[3].innerHTML="paragraph4";
+      document.getElementsByTagName("P")[4].innerHTML="paragraph5";
+     }
+    </script>
+</html>

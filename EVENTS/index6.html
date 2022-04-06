@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>example2</title>
+    </head>
+    <body>
+        <script>
+            function class_one(){
+                this.sub_one="nodejs";
+                this.sub_two="reactjs";
+                this.sub_three="vuejs";
+            
+            this.getSubOne=function(){
+                return this.sub_one;
+            }
+            this.getSubTwo=function(){
+                return this.sub_two;
+            }
+            this.getSubThree=function(){
+                return this.sub_three;
+            }
+        };
+        let obj1=new class_one();
+        console.log(obj1.getSubOne(),obj1.getSubTwo(),obj1.getSubThree());
+
+        </script>
+    </body>
+</html>

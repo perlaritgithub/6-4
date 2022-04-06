@@ -1,0 +1,25 @@
+<!--Inheritance-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>example5</title>
+    </head>
+    <body>
+        <script>
+            function class_one(){
+
+            };
+            class_one.prototype.var_one="hello1";
+            function class_two(){
+
+            };
+            class_two.prototype=Object.create(class_one.prototype);
+            class_two.prototype.var_two="hello_2";
+            let obj1=new class_two();
+            console.log(obj1.var_one,obj1.var_two);
+            let obj2=new class_one();
+            console.log(obj1.var_one);
+
+        </script>
+    </body>
+</html>

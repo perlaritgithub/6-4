@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>example4</title>
+    </head>
+    <body>
+        <script>
+            function class_one(){
+
+            };
+            class_one.prototype.wish="welcome";
+            class_one.prototype.getWish=function(){
+                return this.wish;
+            }
+            let obj=new class_one();
+            console.log(obj.getWish());
+        </script>
+    </body>
+</html>
